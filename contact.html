@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Brundavanam Goshala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/logo.png">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Cart count animation */
+        .cart-count-animate {
+            animation: pop 0.3s ease-in-out;
+        }
+        @keyframes pop {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.4) rotate(10deg); }
+            100% { transform: scale(1) rotate(0deg); }
+        }
+        /* Spinner animation */
+        .spinner {
+            width: 24px;
+            height: 24px;
+            border: 3px solid currentColor;
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            display: inline-block;
+            animation: spin 0.75s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        /* Custom Logo Loader */
+        .loader-logo {
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+        }
+        /* Header shrink styles */
+        #header-inner {
+            transition: height 0.3s ease-in-out;
+        }
+        #logo-link {
+            transition: font-size 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-stone-50">
+
+    <!-- Page Loader -->
+    <div id="page-loader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white transition-opacity duration-300 ease-in-out">
+        <!-- Replace with the direct URL to your logo image (e.g., assets/logo.png) -->
+        <img src="/logo.png" alt="Brundavanam Goshala Logo" class="loader-logo w-24 h-24">
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="header-inner" class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a id="logo-link" href="index.html" class="text-xl sm:text-2xl font-bold text-green-800 hover:text-green-700">Brundavanam Goshala</a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8 text-base">
+                    <a href="index.html" class="text-stone-600 hover:text-green-700 py-2 font-medium">HOME</a>
+                    <a href="about.html" class="text-stone-600 hover:text-green-700 py-2 font-medium">ABOUT US</a>
+                    <a href="contact.html" class="text-green-700 font-semibold border-b-2 border-green-700 py-2">SUPPORT</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="cart.html" class="relative text-stone-600 hover:text-green-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.16"/></svg>
+                        <span id="cart-count" class="absolute -top-2 -right-2 bg-amber-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </a>
+                    <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/80 backdrop-blur-sm border-t p-4 space-y-2">
+            <a href="index.html" class="block text-gray-700 hover:bg-stone-100 p-2 rounded">Home</a>
+            <a href="about.html" class="block text-gray-700 hover:bg-stone-100 p-2 rounded">About Us</a>
+            <a href="contact.html" class="block text-gray-700 hover:bg-stone-100 p-2 rounded">Support</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-stone-100 py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-stone-800">We'd Love to Hear From You</h1>
+                <p class="mt-4 text-lg text-stone-600 max-w-2xl mx-auto">Whether you have questions, feedback, or wish to connect with us, feel free to reach out. We're here to help.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form and Details Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg grid md:grid-cols-2 gap-12">
+                    <!-- Left Side: Contact Details -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-stone-800 mb-6">Reach Us Through</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-green-700 mr-4 mt-1 shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <div>
+                                    <h3 class="font-semibold text-stone-700">Address</h3>
+                                    <p class="text-stone-600">4-8, Manyam Parvathipuram District, Andhra Pradesh, India. P.O 535592</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-green-700 mr-4 mt-1 shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <div>
+                                    <h3 class="font-semibold text-stone-700">Phone</h3>
+                                    <p class="text-stone-600">+91 9492602499</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-green-700 mr-4 mt-1 shrink-0"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                <div>
+                                    <h3 class="font-semibold text-stone-700">Email</h3>
+                                    <p class="text-stone-600">gokarni1967@yahoo.com</p>
+                                </div>
+                            </div>
+                             <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-green-700 mr-4 mt-1 shrink-0"><path d="M2.5 17a24.12 24.12 0 0 1 0-10C2.5 6 4.5 4 7 4h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-1Z"/><path d="m10 15 5-3-5-3z"/></svg>
+                                <div>
+                                    <h3 class="font-semibold text-stone-700">Stay Connected</h3>
+                                    <a href="#" class="text-amber-600 hover:underline">Visit Our YouTube Channel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Contact Form -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-stone-800 mb-6">Send Us a Message</h2>
+                        <!-- Replace YOUR_FORM_ID with the ID from Formspree -->
+                        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+                            <div>
+                                <label for="name" class="sr-only">Full Name</label>
+                                <input type="text" name="name" id="name" required class="w-full p-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-green-600" placeholder="Full Name">
+                            </div>
+                             <div>
+                                <label for="email" class="sr-only">Email Address</label>
+                                <input type="email" name="email" id="email" required class="w-full p-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-green-600" placeholder="Email Address">
+                            </div>
+                             <div>
+                                <label for="subject" class="sr-only">Subject</label>
+                                <input type="text" name="subject" id="subject" required class="w-full p-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-green-600" placeholder="Subject">
+                            </div>
+                            <div>
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea name="message" id="message" rows="5" required class="w-full p-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-green-600" placeholder="Your Message"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full flex items-center justify-center bg-green-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-800 transition-colors shadow-md">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                        <div id="form-status" class="mt-4 text-center font-medium"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Google Map Section -->
+        <section class="py-16 bg-stone-100">
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                 <h2 class="text-3xl font-bold text-stone-800 text-center mb-8">Find Us On The Map</h2>
+                 <div class="rounded-lg shadow-lg overflow-hidden">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Sree%20Raghavendra%20Brundavanam%2C%20Garellavalasa%2C%20Parvathipuram%20Manyam%2C%20Andhra%20Pradesh%2C%20535592&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                 </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-white">
+        <div class="container mx-auto px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Brundavanam Goshala</h4>
+                    <p class="text-stone-400">Gaumata, the Viswa Mata, gives everything without expecting anything; it’s our duty to protect her. Support us by buying Gaushala products to save Gouvansh.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Useful Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-stone-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-stone-400 hover:text-white">Return and Refund Policy</a></li>
+                        <li><a href="#" class="text-stone-400 hover:text-white">Shipping Policy</a></li>
+                        <li><a href="#" class="text-stone-400 hover:text-white">Terms and Condition</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">More Information</h4>
+                     <ul class="space-y-2">
+                        <li><a href="about.html" class="text-stone-400 hover:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-stone-400 hover:text-white">Contact</a></li>
+                        <li><a href="index.html" class="text-stone-400 hover:text-white">Shop</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="font-bold text-lg mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-stone-400">
+                        <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2 mt-1 shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 94926 02499</li>
+                        <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2 mt-1 shrink-0"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>gokarni1967@yahoo.com</li>
+                        <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2 mt-1 shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>4-8, Manyam Parvathipuram District, India, Andhra Pradesh-535592</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-stone-700 pt-6 text-center text-stone-500 text-sm">
+                <p>© Copyright 2025 | All Rights Reserved | Brundavanam Ghoshala | 100% PURE PRODUCTS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // This script is now primarily for mobile menu and cart count, which don't need DOMContentLoaded
+        // Mobile Menu Toggle & Active Link
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+            const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+            const mobileNavLinks = mobileMenu.querySelectorAll('a');
+            mobileNavLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('bg-green-100', 'text-green-800', 'font-semibold');
+                }
+            });
+        }
+
+        // --- Cart Count Logic ---
+        const cartCountElement = document.getElementById('cart-count');
+        
+        function updateCartCount() {
+            const storedProducts = JSON.parse(localStorage.getItem('goshalaProducts')) || [];
+            const itemsInCart = storedProducts.filter(p => p.inCart).length;
+            const currentCount = parseInt(cartCountElement.textContent);
+
+            if (cartCountElement && itemsInCart !== currentCount) {
+                cartCountElement.textContent = itemsInCart;
+                cartCountElement.classList.add('cart-count-animate');
+                cartCountElement.addEventListener('animationend', () => {
+                    cartCountElement.classList.remove('cart-count-animate');
+                }, { once: true });
+            }
+        }
+
+        // Initial count on page load
+        updateCartCount();
+
+        // Listen for changes in other tabs
+        window.addEventListener('storage', (event) => {
+            if (event.key === 'goshalaProducts') {
+                updateCartCount();
+            }
+        });
+
+        // --- PAGE LOADER LOGIC ---
+        const pageLoader = document.getElementById('page-loader');
+        // On page load, fade out the loader
+        document.addEventListener('DOMContentLoaded', () => {
+            if (pageLoader) {
+                pageLoader.classList.add('opacity-0');
+                // After the transition, hide it so it doesn't block interactions
+                setTimeout(() => {
+                    pageLoader.style.display = 'none';
+                }, 300); // Match duration-300
+            }
+        });
+        // Before leaving the page, show the loader
+        window.addEventListener('beforeunload', () => {
+            if (pageLoader) {
+                pageLoader.style.display = 'flex';
+            }
+        });
+    </script>
+</body>
+</html>
