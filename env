@@ -1,0 +1,2 @@
+MONGO_URI="mongodb+srv://taddikrishnavamsi_db_user:vamsiqwerty@cluster0.pml3f9g.mongodb.net/ecom_reviews?retryWrites=true&w=majority&appName=Cluster0"
+PORT=3000
