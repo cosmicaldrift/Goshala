@@ -1,0 +1,246 @@
+[
+    { 
+        "id": 1, "name": "Pure A2 Ghee - Traditional & Authentic (500ml)", 
+        "dateAdded": "2024-01-15",
+        "category": ["Food & Wellness", "Ghee", "Pooja Items"],
+        "images": [
+            "https://placehold.co/600x600/FBBF24/FFFFFF?text=A2+Ghee+1",
+            "https://placehold.co/600x600/FBBF24/8B4513?text=A2+Ghee+2",
+            "https://placehold.co/600x600/FBBF24/2d5a2d?text=A2+Ghee+3"
+        ],
+        "description": "Authentic A2 Ghee prepared traditionally, ideal for cooking, health, and spiritual rituals.",
+        "rating": 4, "reviewsCount": 2, "sellerTag": "Limited time deal", "price": 750, "originalPrice": 900, "deliveryDate": "FREE Delivery by Tomorrow",
+        "reviews": [
+            { "user": "Anjali P.", "rating": 5, "comment": "Excellent quality and authentic taste. Highly recommended!" },
+            { "user": "Vikram S.", "rating": 4, "comment": "Good product, well-packaged and delivered on time." }
+        ]
+    },
+    { 
+        "id": 2, "name": "Herbal Panchagavya Soap (100g)", 
+        "dateAdded": "2024-06-20",
+        "category": ["Personal Care", "Panchagavya"],
+        "images": ["https://placehold.co/600x600/34D399/FFFFFF?text=Soap+1"],
+        "description": "Handmade soap with Panchagavya and natural herbs for glowing skin.",
+        "rating": 5, "reviewsCount": 2, "sellerTag": "Best Seller", "price": 150, "originalPrice": 180, "deliveryDate": "FREE Delivery by Tomorrow",
+        "reviews": [
+            { "user": "Sunita M.", "rating": 5, "comment": "The aroma is so pure and natural. Will buy again." },
+            { "user": "Rohan D.", "rating": 5, "comment": "Very effective. I can feel the difference." }
+        ]
+    },
+    { 
+        "id": 3, "name": "100% Organic Cow Manure (5kg)", 
+        "dateAdded": "2023-12-01",
+        "category": ["Gardening & Agriculture", "Fertilizer"],
+        "images": ["https://placehold.co/600x600/8B4513/FFFFFF?text=Manure+1"],
+        "description": "Natural composted cow manure to improve soil fertility and plant health.",
+        "rating": 4, "reviewsCount": 2, "sellerTag": null, "price": 250, "originalPrice": null, "deliveryDate": "FREE Delivery in 2-3 days",
+        "reviews": [
+            { "user": "Meera N.", "rating": 4, "comment": "A must-have for a healthy lifestyle. Great value for money." },
+            { "user": "Arjun K.", "rating": 5, "comment": "I'm very happy with my purchase. The product is exactly as described." }
+        ]
+    },
+    { 
+        "id": 4, "name": "Purifying Cow Dung Dhoop Sticks", 
+        "dateAdded": "2024-06-15",
+        "category": ["Spiritual & Home", "Pooja Items", "Incense"],
+        "images": ["https://placehold.co/600x600/F59E0B/FFFFFF?text=Dhoop+1"],
+        "description": "Traditional cow dung dhoop sticks for pooja and meditation.",
+        "rating": 5, "reviewsCount": 2, "sellerTag": "Limited time deal", "price": 120, "originalPrice": 150, "deliveryDate": "FREE Delivery by Tomorrow",
+        "reviews": [
+            { "user": "Kavita R.", "rating": 5, "comment": "The best I've found online. The quality is top-notch." },
+            { "user": "Sameer V.", "rating": 4, "comment": "Good value for the price. The packaging was also very secure." }
+        ]
+    },
+    { 
+        "id": 5, "name": "Handmade Cow Dung Diyas (Set of 12)", 
+        "dateAdded": "2024-08-01",
+        "category": ["Spiritual & Home", "Pooja Items"],
+        "images": ["https://placehold.co/600x600/F97316/FFFFFF?text=Diyas"],
+        "description": "Eco-friendly cow dung diyas perfect for Diwali and other festivals.",
+        "rating": 5, "reviewsCount": 2, "sellerTag": "Festival Offer", "price": 199, "originalPrice": 299, "deliveryDate": "FREE Delivery in 2 days",
+        "reviews": [
+            { "user": "Nisha G.", "rating": 5, "comment": "This has become a staple in our household. Love it!" },
+            { "user": "Aditya B.", "rating": 4, "comment": "Slightly expensive, but the quality justifies the price." }
+        ]
+    },
+    { 
+        "id": 6, "name": "Organic Amla Powder (250g)", 
+        "dateAdded": "2024-07-11",
+        "category": ["Food & Wellness", "Ayurveda"],
+        "images": ["https://placehold.co/600x600/16A34A/FFFFFF?text=Amla+Powder"],
+        "description": "Boosts immunity and improves digestion. 100% natural and chemical-free.",
+        "rating": 4, "reviewsCount": 2, "sellerTag": "Best Seller", "price": 220, "originalPrice": 300, "deliveryDate": "FREE Delivery by Tomorrow",
+        "reviews": [
+            { "user": "Anjali P.", "rating": 5, "comment": "Excellent quality and authentic taste. Highly recommended!" },
+            { "user": "Vikram S.", "rating": 4, "comment": "Good product, well-packaged and delivered on time." }
+        ]
+    },
+    { 
+        "id": 7, "name": "Sacred Gomutra Ark (500ml)", 
+        "dateAdded": "2024-04-25",
+        "category": ["Wellness", "Ayurveda"],
+        "images": ["https://placehold.co/600x600/2563EB/FFFFFF?text=Gomutra"],
+        "description": "Traditional cow urine distillate for detoxification and immunity boost.",
+        "rating": 4, "reviewsCount": 2, "sellerTag": null, "price": 180, "originalPrice": 220, "deliveryDate": "FREE Delivery in 2 days",
+        "reviews": [
+            { "user": "Sunita M.", "rating": 5, "comment": "The aroma is so pure and natural. Will buy again." },
+            { "user": "Rohan D.", "rating": 5, "comment": "Very effective. I can feel the difference." }
+        ]
+    },
+    { 
+        "id": 8, "name": "Organic Multigrain Atta (5kg)", 
+        "dateAdded": "2024-05-10",
+        "category": ["Food & Wellness", "Groceries"],
+        "images": ["https://placehold.co/600x600/EAB308/FFFFFF?text=Multigrain"],
+        "description": "Healthy and nutritious multigrain flour made from organically grown grains.",
+        "rating": 5, "reviewsCount": 2, "sellerTag": "Healthy Choice", "price": 450, "originalPrice": 500, "deliveryDate": "FREE Delivery by Tomorrow",
+        "reviews": [
+            { "user": "Meera N.", "rating": 4, "comment": "A must-have for a healthy lifestyle. Great value for money." },
+            { "user": "Arjun K.", "rating": 5, "comment": "I'm very happy with my purchase. The product is exactly as described." }
+        ]
+    },
+    { 
+        "id": 9, "name": "Brass Pooja Thali Set", 
+        "dateAdded": "2024-02-22",
+        "category": ["Spiritual & Home", "Pooja Items"],
+        "images": ["https://placehold.co/600x600/D97706/FFFFFF?text=Pooja+Thali"],
+        "description": "Traditional brass pooja thali with diya, bell, and kumkum holder.",
+        "rating": 5, "reviewsCount": 2, "sellerTag": "Limited Stock", "price": 999, "originalPrice": 1200, "deliveryDate": "FREE Delivery in 3 days",
+        "reviews": [
+            { "user": "Kavita R.", "rating": 5, "comment": "The best I've found online. The quality is top-notch." },
+            { "user": "Sameer V.", "rating": 4, "comment": "Good value for the price. The packaging was also very secure." }
+        ]
+    },
+    { 
+        "id": 10, "name": "Herbal Neem Toothpaste (100g)", 
+        "dateAdded": "2024-06-30",
+        "category": ["Personal Care", "Ayurveda"],
+        "images": ["https://placehold.co/600x600/65A30D/FFFFFF?text=Neem+Paste"],
+        "description": "Chemical-free toothpaste with neem extract for strong gums and teeth.",
+        "rating": 4, "reviewsCount": 2, "sellerTag": "Best Seller", "price": 90, "originalPrice": 120, "deliveryDate": "FREE Delivery by Tomorrow",
+        "reviews": [
+            { "user": "Nisha G.", "rating": 5, "comment": "This has become a staple in our household. Love it!" },
+            { "user": "Aditya B.", "rating": 4, "comment": "Slightly expensive, but the quality justifies the price." }
+        ]
+    },
+    { 
+        "id": 11, "name": "Organic Honey (1kg)", 
+        "dateAdded": "2024-03-18",
+        "category": ["Food & Wellness", "Superfoods"],
+        "images": ["https://placehold.co/600x600/FBBF24/000000?text=Honey"],
+        "description": "Raw and pure organic honey sourced from forest beekeepers.",
+        "rating": 5, "reviewsCount": 2, "sellerTag": "Best Seller", "price": 600, "originalPrice": 750, "deliveryDate": "FREE Delivery by Tomorrow",
+        "reviews": [
+            { "user": "Anjali P.", "rating": 5, "comment": "Excellent quality and authentic taste. Highly recommended!" },
+            { "user": "Vikram S.", "rating": 4, "comment": "Good product, well-packaged and delivered on time." }
+        ]
+    },
+    { 
+        "id": 12, "name": "Handmade Clay Water Pot (Matka)", 
+        "dateAdded": "2024-05-05",
+        "category": ["Home & Kitchen", "Clayware"],
+        "images": ["https://placehold.co/600x600/92400E/FFFFFF?text=Matka"],
+        "description": "Keeps water naturally cool and enhances taste.",
+        "rating": 4, "reviewsCount": 2, "sellerTag": null, "price": 350, "originalPrice": 400, "deliveryDate": "FREE Delivery in 4 days",
+        "reviews": [
+            { "user": "Sunita M.", "rating": 5, "comment": "The aroma is so pure and natural. Will buy again." },
+            { "user": "Rohan D.", "rating": 5, "comment": "Very effective. I can feel the difference." }
+        ]
+    },
+    { 
+        "id": 13, "name": "Tulsi Herbal Tea (250g)", 
+        "dateAdded": "2024-07-01",
+        "category": ["Food & Wellness", "Beverages"],
+        "images": ["https://placehold.co/600x600/16A34A/FFFFFF?text=Tulsi+Tea"],
+        "description": "Refreshing herbal tea made from holy basil leaves for immunity and relaxation.",
+        "rating": 5, "reviewsCount": 2, "sellerTag": "Healthy Choice", "price": 320, "originalPrice": 400, "deliveryDate": "FREE Delivery by Tomorrow",
+        "reviews": [
+            { "user": "Meera N.", "rating": 4, "comment": "A must-have for a healthy lifestyle. Great value for money." },
+            { "user": "Arjun K.", "rating": 5, "comment": "I'm very happy with my purchase. The product is exactly as described." }
+        ]
+    },
+    { 
+        "id": 14, "name": "Organic Turmeric Powder (250g)", 
+        "dateAdded": "2024-01-30",
+        "category": ["Food & Wellness", "Spices"],
+        "images": ["https://placehold.co/600x600/FACC15/FFFFFF?text=Turmeric"],
+        "description": "Rich in curcumin, ideal for cooking and Ayurvedic remedies.",
+        "rating": 5, "reviewsCount": 2, "sellerTag": "Limited time deal", "price": 180, "originalPrice": 220, "deliveryDate": "FREE Delivery by Tomorrow",
+        "reviews": [
+            { "user": "Kavita R.", "rating": 5, "comment": "The best I've found online. The quality is top-notch." },
+            { "user": "Sameer V.", "rating": 4, "comment": "Good value for the price. The packaging was also very secure." }
+        ]
+    },
+    { 
+        "id": 15, "name": "Eco-Friendly Bamboo Toothbrush (Pack of 4)", 
+        "dateAdded": "2024-06-05",
+        "category": ["Personal Care", "Eco-friendly"],
+        "images": ["https://placehold.co/600x600/84CC16/FFFFFF?text=Bamboo+Brush"],
+        "description": "Sustainable and biodegradable toothbrushes for healthy oral care.",
+        "rating": 4, "reviewsCount": 2, "sellerTag": null, "price": 199, "originalPrice": 250, "deliveryDate": "FREE Delivery in 2 days",
+        "reviews": [
+            { "user": "Nisha G.", "rating": 5, "comment": "This has become a staple in our household. Love it!" },
+            { "user": "Aditya B.", "rating": 4, "comment": "Slightly expensive, but the quality justifies the price." }
+        ]
+    },
+    { 
+        "id": 16, "name": "Organic Jaggery Powder (1kg)", 
+        "dateAdded": "2024-04-10",
+        "category": ["Food & Wellness", "Natural Sweeteners"],
+        "images": ["https://placehold.co/600x600/A16207/FFFFFF?text=Jaggery"],
+        "description": "Unrefined and chemical-free jaggery for cooking and desserts.",
+        "rating": 5, "reviewsCount": 2, "sellerTag": "Healthy Choice", "price": 250, "originalPrice": 300, "deliveryDate": "FREE Delivery by Tomorrow",
+        "reviews": [
+            { "user": "Anjali P.", "rating": 5, "comment": "Excellent quality and authentic taste. Highly recommended!" },
+            { "user": "Vikram S.", "rating": 4, "comment": "Good product, well-packaged and delivered on time." }
+        ]
+    },
+    { 
+        "id": 17, "name": "Brass Oil Lamp (Diya)", 
+        "dateAdded": "2024-07-25",
+        "category": ["Spiritual & Home", "Pooja Items"],
+        "images": ["https://placehold.co/600x600/FDE68A/000000?text=Brass+Diya"],
+        "description": "Beautifully crafted brass diya for spiritual rituals and meditation.",
+        "rating": 5, "reviewsCount": 2, "sellerTag": "Limited Stock", "price": 499, "originalPrice": 600, "deliveryDate": "FREE Delivery in 3 days",
+        "reviews": [
+            { "user": "Sunita M.", "rating": 5, "comment": "The aroma is so pure and natural. Will buy again." },
+            { "user": "Rohan D.", "rating": 5, "comment": "Very effective. I can feel the difference." }
+        ]
+    },
+    { 
+        "id": 18, "name": "Neem Wood Comb", 
+        "dateAdded": "2024-05-15",
+        "category": ["Personal Care", "Eco-friendly"],
+        "images": ["https://placehold.co/600x600/166534/FFFFFF?text=Neem+Comb"],
+        "description": "Anti-dandruff and scalp-friendly wooden comb made from neem wood.",
+        "rating": 5, "reviewsCount": 2, "sellerTag": null, "price": 120, "originalPrice": 160, "deliveryDate": "FREE Delivery in 2 days",
+        "reviews": [
+            { "user": "Meera N.", "rating": 4, "comment": "A must-have for a healthy lifestyle. Great value for money." },
+            { "user": "Arjun K.", "rating": 5, "comment": "I'm very happy with my purchase. The product is exactly as described." }
+        ]
+    },
+    { 
+        "id": 19, "name": "Organic Moong Dal (1kg)", 
+        "dateAdded": "2024-02-28",
+        "category": ["Food & Wellness", "Groceries"],
+        "images": ["https://placehold.co/600x600/4ADE80/000000?text=Moong+Dal"],
+        "description": "Protein-rich organic moong dal, unpolished and chemical-free.",
+        "rating": 5, "reviewsCount": 2, "sellerTag": "Healthy Choice", "price": 160, "originalPrice": 200, "deliveryDate": "FREE Delivery by Tomorrow",
+        "reviews": [
+            { "user": "Kavita R.", "rating": 5, "comment": "The best I've found online. The quality is top-notch." },
+            { "user": "Sameer V.", "rating": 4, "comment": "Good value for the price. The packaging was also very secure." }
+        ]
+    },
+    { 
+        "id": 20, "name": "Natural Room Freshener - Sandalwood (200ml)", 
+        "dateAdded": "2024-07-05",
+        "category": ["Home & Living", "Fragrance"],
+        "images": ["https://placehold.co/600x600/CA8A04/FFFFFF?text=Sandal+Freshener"],
+        "description": "Non-toxic sandalwood-based room freshener for a calming home atmosphere.",
+        "rating": 4, "reviewsCount": 2, "sellerTag": "Limited Offer", "price": 299, "originalPrice": 399, "deliveryDate": "FREE Delivery in 2 days",
+        "reviews": [
+            { "user": "Nisha G.", "rating": 5, "comment": "This has become a staple in our household. Love it!" },
+            { "user": "Aditya B.", "rating": 4, "comment": "Slightly expensive, but the quality justifies the price." }
+        ]
+    }
+]
