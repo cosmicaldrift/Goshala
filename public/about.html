@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Brundavanam Goshala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/png" href="/logo.png">
+   <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Cart count animation */
+        .cart-count-animate {
+            animation: pop 0.3s ease-in-out;
+        }
+        @keyframes pop {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.4) rotate(10deg); }
+            100% { transform: scale(1) rotate(0deg); }
+        }
+        /* Header shrink styles */
+        #header-inner {
+            transition: height 0.3s ease-in-out;
+        }
+        #logo-link {
+            transition: font-size 0.3s ease-in-out;
+        }
+        /* Custom Logo Loader */
+        .loader-logo {
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+        }
+        /* Spinner animation */
+        .spinner {
+            width: 24px;
+            height: 24px;
+            border: 3px solid currentColor;
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            display: inline-block;
+            animation: spin 0.75s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-stone-50">
+
+    <!-- Page Loader -->
+    <div id="page-loader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white transition-opacity duration-300 ease-in-out">
+        <!-- Replace with the direct URL to your logo image (e.g., assets/logo.png) -->
+        <img src="/logo.png" alt="Brundavanam Goshala Logo" class="loader-logo w-24 h-24">
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="header-inner" class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a id="logo-link" href="index.html" class="text-xl sm:text-2xl font-bold text-green-800 hover:text-green-700">Brundavanam Goshala</a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8 text-base">
+                    <a href="index.html" class="text-stone-600 hover:text-green-700 py-2 font-medium">HOME</a>
+                    <a href="about.html" class="text-green-700 font-semibold border-b-2 border-green-700 py-2">ABOUT US</a>
+                    <a href="contact.html" class="text-stone-600 hover:text-green-700 py-2 font-medium">SUPPORT</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="cart.html" class="relative text-stone-600 hover:text-green-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.16"/></svg>
+                        <span id="cart-count" class="absolute -top-2 -right-2 bg-amber-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </a>
+                    <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/80 backdrop-blur-sm border-t p-4 space-y-2">
+            <a href="index.html" class="block text-gray-700 hover:bg-stone-100 p-2 rounded">Home</a>
+            <a href="about.html" class="block text-gray-700 hover:bg-stone-100 p-2 rounded">About Us</a>
+            <a href="contact.html" class="block text-gray-700 hover:bg-stone-100 p-2 rounded">Support</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section with Parallax Effect -->
+        <section 
+            class="relative text-white py-20 md:py-32 bg-cover bg-center bg-fixed" 
+            style="background-image: url('https://placehold.co/1600x600/22543D/FFFFFF?text=Goshala+Hills');">
+            <div class="absolute inset-0 bg-green-900 opacity-60"></div>
+            <div class="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold">About Brundavanam Goshala</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto">Our journey of sustainable farming, holistic healing, and devotion to Gaumata.</p>
+            </div>
+        </section>
+
+        <!-- Our Journey Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-stone-800 mb-4">Our Journey Since 2015</h2>
+                    <p class="text-stone-600 leading-relaxed">
+                        We began our journey in 2015 as a cow-based farming station, dedicated to sustainable and natural farming practices. BRUNDAVANAM holds significant geographical advantages, being situated at the foothills of the Eastern Ghats, an area rich in natural beauty and resources. A key benefit of this location is its proximity to dense forests, which provide a diverse range of medicinal herbs. These herbs play a crucial role in the preparation of Panchagavya medicines, enhancing the effectiveness of our natural healing practices.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/8B4513/FFFFFF?text=Medicinal+Herbs" alt="Medicinal herbs from the Eastern Ghats" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="py-16 bg-stone-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-stone-800 mb-4">What We Aim For</h2>
+                <p class="text-stone-600 max-w-4xl mx-auto mb-6">
+                    Gaumata is revered as Viswa Mata, the universal mother, who selflessly nurtures and sustains all life. She provides everything essential for the well-being of the world, expecting nothing in return. It is our sacred duty to protect and care for her, ensuring the health, prosperity, and spiritual harmony of mankind. At Brundavanam, we do not seek or demand donations in any form. Instead, we invite you to support our Gaushala by choosing our ethically produced cow-based products. Every purchase contributes to the welfare of our cows, helps preserve Gouvansh, and strengthens the bond between humanity and nature.
+                </p>
+                <div class="bg-green-700 text-white italic p-6 rounded-lg shadow-inner max-w-3xl mx-auto">
+                    <p>"Honor Gaumata, the Universal Mother—nurture nature, support ethical cow-based living, and build a sustainable future with every mindful choice."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Commitments -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-stone-800 text-center mb-12">Our Mission and Commitments</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Commitment 1 -->
+                    <div class="p-6">
+                        <div class="flex justify-center mb-4">
+                            <div class="bg-green-100 p-4 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-800"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold text-stone-800 mb-2">Empowering Farmers & Spreading Awareness</h3>
+                        <p class="text-stone-600">We are dedicated to training local farmers in cow-based farming and the art of making Panchagavya products to promote sustainable agriculture.</p>
+                    </div>
+                    <!-- Commitment 2 -->
+                    <div class="p-6">
+                        <div class="flex justify-center mb-4">
+                            <div class="bg-green-100 p-4 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-800"><path d="M22 12h-7l-2 9-4-18-2 9H2"/><path d="m13 2-2 4-2-4"/><path d="m21 12-2-4-2 4"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold text-stone-800 mb-2">Harnessing Panchagavya for Holistic Healing</h3>
+                        <p class="text-stone-600">Based on ancient sutras, we use Panchagavya and natural herbs to create remedies that balance the body's Trigunas for overall well-being.</p>
+                    </div>
+                    <!-- Commitment 3 -->
+                    <div class="p-6">
+                         <div class="flex justify-center mb-4">
+                            <div class="bg-green-100 p-4 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-800"><path d="M11 20A7 7 0 0 1 4 13H2a9 9 0 0 0 9 9z"/><path d="M12 22s8-4 8-10-3-9-3-9-8 4-8 10 3 9 3 9"/><path d="M12 10a2 2 0 0 1 2 2c0 2-3 3-3 3"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold text-stone-800 mb-2">Reviving Ancient Wisdom for Health</h3>
+                        <p class="text-stone-600">We produce Panchagavya-based products to enhance health and longevity, inspired by the divine gifts of Gaumata.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Team Section -->
+        <section class="py-16 bg-stone-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold text-stone-800 mb-4">Our Core Team</h2>
+                    <p class="text-stone-600 mb-12">
+                        Behind Brundavanam is a dedicated team of passionate individuals committed to ethical living, sustainable farming, and the service of Gaumata.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <!-- Team Member -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/200x200/cccccc/333333?text=B+K+D" alt="Bala Krishna Davuluri" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg">
+                        <h4 class="font-bold text-stone-800">Bala Krishna Davuluri</h4>
+                        <p class="text-stone-600">President</p>
+                    </div>
+                     <!-- Team Member -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/200x200/cccccc/333333?text=R" alt="Ramji" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg">
+                        <h4 class="font-bold text-stone-800">Ramji</h4>
+                        <p class="text-stone-600">President</p>
+                    </div>
+                     <!-- Team Member -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/200x200/cccccc/333333?text=M+K" alt="Mahesh Karanam" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg">
+                        <h4 class="font-bold text-stone-800">Mahesh Karanam</h4>
+                        <p class="text-stone-600">Incharge</p>
+                    </div>
+                     <!-- Team Member -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/200x200/cccccc/333333?text=L+R" alt="Lakshmana Rao" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg">
+                        <h4 class="font-bold text-stone-800">Lakshmana Rao</h4>
+                        <p class="text-stone-600">Incharge</p>
+                    </div>
+                     <!-- Team Member -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/200x200/cccccc/333333?text=S" alt="Sreenu" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg">
+                        <h4 class="font-bold text-stone-800">Sreenu</h4>
+                        <p class="text-stone-600">Incharge</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- YouTube CTA -->
+        <section class="bg-amber-500">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+                <h2 class="text-3xl font-bold text-stone-900">Join Our Community</h2>
+                <p class="text-stone-800 mt-2 mb-6 max-w-2xl mx-auto">Follow our journey and learn more about our work by visiting our YouTube channel.</p>
+                <a href="#" class="inline-flex items-center bg-white text-stone-800 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-stone-100 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-2 text-red-600"><path d="M2.5 17a24.12 24.12 0 0 1 0-10C2.5 6 4.5 4 7 4h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-1Z"/><path d="m10 15 5-3-5-3z"/></svg>
+                    Visit Our YouTube Channel
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-white">
+        <div class="container mx-auto px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Brundavanam Goshala</h4>
+                    <p class="text-stone-400">Gaumata, the Viswa Mata, gives everything without expecting anything; it’s our duty to protect her. Support us by buying Gaushala products to save Gouvansh.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Useful Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-stone-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-stone-400 hover:text-white">Return and Refund Policy</a></li>
+                        <li><a href="#" class="text-stone-400 hover:text-white">Shipping Policy</a></li>
+                        <li><a href="#" class="text-stone-400 hover:text-white">Terms and Condition</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">More Information</h4>
+                     <ul class="space-y-2">
+                        <li><a href="about.html" class="text-stone-400 hover:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-stone-400 hover:text-white">Contact</a></li>
+                        <li><a href="index.html" class="text-stone-400 hover:text-white">Shop</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="font-bold text-lg mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-stone-400">
+                        <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2 mt-1 shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 94926 02499</li>
+                        <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2 mt-1 shrink-0"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>gokarni1967@yahoo.com</li>
+                        <li class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mr-2 mt-1 shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>4-8, Manyam Parvathipuram District, India, Andhra Pradesh-535592</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-stone-700 pt-6 text-center text-stone-500 text-sm">
+                <p>© Copyright 2025 | All Rights Reserved | Brundavanam Ghoshala | 100% PURE</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // This script is now primarily for mobile menu and cart count, which don't need DOMContentLoaded
+        // Mobile Menu Toggle & Active Link
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+            const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+            const mobileNavLinks = mobileMenu.querySelectorAll('a');
+            mobileNavLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('bg-green-100', 'text-green-800', 'font-semibold');
+                }
+            });
+        }
+
+        // --- Cart Count Logic ---
+        const cartCountElement = document.getElementById('cart-count');
+        
+        function updateCartCount() {
+            const storedProducts = JSON.parse(localStorage.getItem('goshalaProducts')) || [];
+            const itemsInCart = storedProducts.filter(p => p.inCart).length;
+            const currentCount = parseInt(cartCountElement.textContent);
+
+            if (cartCountElement && itemsInCart !== currentCount) {
+                cartCountElement.textContent = itemsInCart;
+                cartCountElement.classList.add('cart-count-animate');
+                cartCountElement.addEventListener('animationend', () => {
+                    cartCountElement.classList.remove('cart-count-animate');
+                }, { once: true });
+            }
+        }
+
+        // Initial count on page load
+        updateCartCount();
+
+        // Listen for changes in other tabs
+        window.addEventListener('storage', (event) => {
+            if (event.key === 'goshalaProducts') {
+                updateCartCount();
+            }
+        });
+
+        // --- PAGE LOADER LOGIC ---
+        const pageLoader = document.getElementById('page-loader');
+        // On page load, fade out the loader
+        document.addEventListener('DOMContentLoaded', () => {
+            if (pageLoader) {
+                pageLoader.classList.add('opacity-0');
+                // After the transition, hide it so it doesn't block interactions
+                setTimeout(() => {
+                    pageLoader.style.display = 'none';
+                }, 300); // Match duration-300
+            }
+        });
+        // Before leaving the page, show the loader
+        window.addEventListener('beforeunload', () => {
+            if (pageLoader) {
+                pageLoader.style.display = 'flex';
+            }
+        });
+    </script>
+</body>
+</html>
